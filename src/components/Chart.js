@@ -1,5 +1,3 @@
-//This component could not get working, see the ChartPlaceHolder component.
-
 
 import React from "react";
 import Card from "@material-ui/core/Card";

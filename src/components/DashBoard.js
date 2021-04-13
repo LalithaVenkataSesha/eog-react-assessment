@@ -88,15 +88,13 @@ const Dashboard = (props) => {
       input,
     },
   });
-  // console.log(result.data)
 
   const [res] = useSubscription({ query: measurementSubscriptionQuery }, handleSubscription);  
   if (!res.data) {
     return <p>No data</p>;
   }
   console.log(result.data)
-
-  //I know this is janky to put it kindly, but a MVP dashboard is now updating with working subscriptions.
+  
   const filteredTubingP = res.data.filter(measurement => measurement.metric === "tubingPressure")
   const tpData = filteredTubingP.slice(0,1).map(measurement => measurement.value)
   const filteredCasingP = res.data.filter(measurement => measurement.metric === "casingPressure")
