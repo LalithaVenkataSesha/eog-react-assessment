@@ -1,20 +1,21 @@
-import React from 'react';
-import Typography from '@material-ui/core/Typography';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import { makeStyles } from '@material-ui/core/styles';
-import Weather from '../Features/Weather/Weather';
+import React from "react";
+import Typography from "@material-ui/core/Typography";
+import AppBar from "@material-ui/core/AppBar";
+import Toolbar from "@material-ui/core/Toolbar";
+import { makeStyles } from "@material-ui/core/styles";
+import Weather from "./Weather";
+
 
 const useStyles = makeStyles({
   grow: {
-    flexGrow: 1,
-  },
+    flexGrow: 1
+  }
 });
 
 export default () => {
   const classes = useStyles();
 
-  const name = "Lalitha's";
+  const name = "Lalitha P";
   return (
     <AppBar position="static">
       <Toolbar>
